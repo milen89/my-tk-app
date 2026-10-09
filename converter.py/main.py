@@ -1,7 +1,6 @@
 import tkinter as tk
 from tkinter import ttk
-
-
+from CONVERSIONS import CONVERSIONS  
 
 
 # Создаём окно
@@ -27,8 +26,9 @@ value_entry.pack(pady=8)
 value_entry.focus()
 
 # Список конвертаций
-c
-    rootб
+conversion_box = ttk.Combobox(
+    root,
+    values=list(CONVERSIONS.keys()),
     state="readonly",
     width=25
 )
